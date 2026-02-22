@@ -1,0 +1,10 @@
+services:
+  fleet-db:
+    image: postgres:15
+    container_name: microfleet-postgres
+    environment:
+      POSTGRES_USER: dev_user
+      POSTGRES_PASSWORD: dev_password
+      POSTGRES_DB: microfleet
+    ports:
+      - "5432:5432"
