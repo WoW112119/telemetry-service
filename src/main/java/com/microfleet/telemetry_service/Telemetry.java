@@ -16,4 +16,5 @@ public class Telemetry {
     private Double speed;
     private Integer battery;
     private LocalDateTime timestamp = LocalDateTime.now();
+    private boolean highSpeedViolation;
 }
