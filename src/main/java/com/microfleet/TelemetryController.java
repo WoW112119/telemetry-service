@@ -25,4 +25,9 @@ public class TelemetryController {
     public List<Telemetry> getAllData() {
         return service.getAllData();
     }
+
+    @GetMapping("/violations")
+    public List<Telemetry> getViolationsOnly() {
+        return service.getViolations();
+    }
 }
