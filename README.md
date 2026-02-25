@@ -21,3 +21,4 @@ To provide a scalable, low-latency data pipeline that transforms raw lift truck 
 ## 📂 Development History
 Detailed technical notes and "Definition of Done" for each sprint can be found in the archives:
 * [Sprint 1: Core Infrastructure](./docs/sprints/sprint-1.md)
+* [Sprint 2: Logic Layer](./docs/sprints/sprint-2.md)
