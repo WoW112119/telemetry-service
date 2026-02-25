@@ -30,4 +30,18 @@ public class TelemetryController {
     public List<Telemetry> getViolationsOnly() {
         return service.getViolations();
     }
+
+    @GetMapping("/truck/{truckId}")
+    public List<Telemetry> getByTruck(@PathVariable String truckId) {
+        List<Telemetry> results = service.getDataByTruck(truckId);
+        if (results.isEmpty()) {
+            System.out.println("No data found for truck: " + truckId);
+        }
+        return results;
+    }
+
+    @DeleteMapping("/{id}")
+public void deleteData(@PathVariable Long id) {
+    service.deleteTelemetry(id);
+    }
 }

@@ -10,4 +10,7 @@ public interface TelemetryRepository extends JpaRepository<Telemetry, Long> {
 
     // Just the type and the method name
 List<Telemetry> findByHighSpeedViolationTrue();
+
+// Spring Boot will match the String truckId to the truck_id column in Postgres
+List<Telemetry> findByTruckId(String truckId);
 }

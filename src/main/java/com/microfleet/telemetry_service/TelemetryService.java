@@ -32,4 +32,16 @@ public class TelemetryService {
     public List<Telemetry> getViolations() {
         return repository.findByHighSpeedViolationTrue();
     }
+
+    public List<Telemetry> getDataByTruck(String truckId) {
+    return repository.findByTruckId(truckId);
+    }
+    public void deleteTelemetry(Long id) {
+        if (repository.existsById(id)) {
+            repository.deleteById(id);
+        } else {
+            throw new RuntimeException("Telemetry record with ID " + id + " not found.");
+        }
+    }
+
 }
