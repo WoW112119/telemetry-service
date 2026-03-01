@@ -14,9 +14,16 @@ To provide a scalable, low-latency data pipeline that transforms raw lift truck 
 
 ## 🗺️ Project Roadmap (Product Backlog)
 - [x] **Sprint 1**: Core Infrastructure & Data Persistence
-- [ ] **Sprint 2**: Real-Time Data Validation (In Progress)
-- [ ] **Sprint 3**: Fleet Analytics & Reporting API
-- [ ] **Sprint 4**: Security & OAuth2 Integration
+- [X] **Sprint 2**: Real-Time Data Validation (In Progress)
+- [X] **Sprint 3**: Fleet Analytics & Reporting API
+- [X] **Sprint 4**: Frontend Integration
+
+## 📂 Project Ecosystem
+This backend service is the core data engine for the Microfleet platform and works in tandem with:
+
+* 🖥️ **Frontend**: [Telemetry Dashboard](https://github.com/WoW112119/telemetry-frontend)
+* 🗄️ **Database**: PostgreSQL 15 (Dockerized)
+* 🐋 **Infrastructure**: Docker Compose for localized orchestration
 
 ## 📂 Development History
 Detailed technical notes and "Definition of Done" for each sprint can be found in the archives:
